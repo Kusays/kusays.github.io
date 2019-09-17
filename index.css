@@ -1,0 +1,154 @@
+a, span, p, h1, h2, h3 {
+	color: #55463e;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	grid-gap: 5px;
+	justify-content: center;
+	align-content: start;
+	grid-template-areas: 
+		"header header header header header header"
+		"sidebar sidebar main main main main"
+		"footer footer footer footer footer footer";
+	height: 100vh;
+	margin: 0;
+	background-color: #f0e2c8;
+	max-width: 60vw;
+	margin: auto;
+}
+
+header {
+	grid-area: header;
+	background-image: url('imgs/header-bg.jpg');
+	background-size: 100% 100%;
+}
+
+header .top {
+	min-width: 60vw;
+	margin: 10px;
+	background-size: 100% 100%;
+}
+
+header .quote {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	color: #f6efe6;
+	background-color: #55463e;
+	font-family: Georgia, Times New Roman, Times,serif;
+	font-size: 14px;
+	line-height: 17px;
+	padding: 20px 0 15px 0;
+}
+
+header .quote i {
+	font-size: 28px;
+	font-style: italic;
+	color: #f6efe6;
+}
+
+header img {
+	margin: 0 auto;
+	display: block;
+	width: 20vw;
+}
+
+header ul.pages-nav {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: space-around;
+	background-color: #f6efe6;
+	box-shadow: 7px 9px 35px -3px rgba(0,0,0,0.75);
+	padding: 15px;
+}
+
+header ul.pages-nav li:not(:first-child)::before {
+	content: "■";
+	color: #ccaf48;
+	padding-right: 3vw;
+}
+
+header ul.pages-nav li a {
+	font-size: 20px;
+	line-height: 28px;
+	text-transform: capitalize;
+	font-family: cambo, serif;
+	color: #55463e;
+}
+
+header ul.pages-nav li a.selected {
+	color: #2e849a;
+	text-decoration: none;
+}
+
+header ul.pages-nav li a:hover {
+	color: #2e849a;
+}
+
+aside {
+	grid-area: sidebar;
+	border: 1px solid #54453d38;
+	border-radius: 2%;
+	padding: 15px;
+	text-align: center;
+	width: 180px;
+}
+
+aside .title {
+	border-bottom: 1px solid #54453d38;
+	display: block;
+	font-size: 20px;
+	line-height: 28px;
+	text-transform: capitalize;
+	font-family: cambo, serif;
+	color: #55463e;
+	margin-bottom: 10px;
+}
+
+aside ol {
+	display: block;
+	margin: 0;
+	list-style: none;
+}
+
+aside ol.menu {
+	padding: 0;
+	margin-left: -20%;
+}
+
+aside ol li {
+	line-height: 28px;
+}
+
+main {
+	grid-area: main;
+	width: 40vw;
+	padding: 20px;
+	text-align: center;
+}
+
+footer {
+	grid-area: footer;
+	text-align: center;
+	padding: 10px 0;
+}
+
+#backToTopButton {
+	display: none;
+	position: fixed;
+	color: #55463e;
+	bottom: 50px;
+	right: 50px;
+	border: 1px solid #55463e;
+	padding: 10px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
