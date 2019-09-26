@@ -134,6 +134,10 @@ main {
 	text-align: center;
 }
 
+main img {
+	max-width: 100%;
+}
+
 footer {
 	grid-area: footer;
 	text-align: center;
