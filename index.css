@@ -1,5 +1,10 @@
-a, span, p, h1, h2, h3 {
+a, span, p, h1, h2, h3, summary {
+	font-family: 'Lora', serif;
 	color: #55463e;
+}
+
+summary {
+	font-size: 18px;
 }
 
 div {
@@ -16,16 +21,14 @@ body {
 		"sidebar sidebar main main main main"
 		"footer footer footer footer footer footer";
 	height: 100vh;
-	margin: 0;
 	background-color: #f0e2c8;
 	max-width: 60vw;
 	margin: auto;
+	background: url(./imgs/content-bg.jpg) no-repeat center;
 }
 
 header {
 	grid-area: header;
-	background-image: url('imgs/header-bg.jpg');
-	background-size: 100% 100%;
 }
 
 header .top {
@@ -40,10 +43,10 @@ header .quote {
 	width: 100%;
 	color: #f6efe6;
 	background-color: #55463e;
-	font-family: Georgia, Times New Roman, Times,serif;
 	font-size: 14px;
 	line-height: 17px;
 	padding: 20px 0 15px 0;
+	box-shadow: 7px 9px 35px -3px rgba(0,0,0,0.75);
 }
 
 header .quote i {
@@ -55,13 +58,12 @@ header .quote i {
 header img {
 	margin: 0 auto;
 	display: block;
-	width: 20vw;
+	width: 18vw;
 }
 
 header ul.pages-nav {
 	list-style: none;
 	display: flex;
-	padding: 0;
 	margin: 0;
 	justify-content: space-around;
 	background-color: #f6efe6;
@@ -79,7 +81,6 @@ header ul.pages-nav li a {
 	font-size: 20px;
 	line-height: 28px;
 	text-transform: capitalize;
-	font-family: cambo, serif;
 	color: #55463e;
 }
 
@@ -95,10 +96,11 @@ header ul.pages-nav li a:hover {
 aside {
 	grid-area: sidebar;
 	border: 1px solid #54453d38;
-	border-radius: 2%;
+	border-radius: 10px;
 	padding: 15px;
 	text-align: center;
 	width: 180px;
+	background: rgb(240, 226, 200, 0.6);
 }
 
 aside .title {
@@ -107,7 +109,6 @@ aside .title {
 	font-size: 20px;
 	line-height: 28px;
 	text-transform: capitalize;
-	font-family: cambo, serif;
 	color: #55463e;
 	margin-bottom: 10px;
 }
@@ -130,8 +131,11 @@ aside ol li {
 main {
 	grid-area: main;
 	width: 40vw;
-	padding: 20px;
+	padding: 0 20px 20px 20px;
 	text-align: center;
+	background: rgb(240, 226, 200, 0.6);
+	border-radius: 10px;
+	border: 1px solid #54453d38;
 }
 
 main img {
