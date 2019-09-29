@@ -1,0 +1,167 @@
+aside {
+  position: relative;
+  overflow: hidden;
+  background: #252C32;
+}
+
+.bar {
+  position: absolute;
+  height: 85%;
+  width: 2px;
+  left: 15%;
+  top: 7.5%;
+  background: #F4E8DA;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  left: -5px;
+  border: 1px solid #F4E8DA;
+  box-shadow: 0px 0px 7px #F4E8DA;
+}
+
+.top {
+  background: #5B4644;
+  top: -1%;
+  left: -4px;
+}
+.middle {
+  background: #87624F;
+  top: 38%;
+}
+.bottom {
+  background: #DAB7A3;
+  bottom: -1%;
+}
+
+.bold {
+  color: #87624F;
+  position: absolute;
+  top: -7%;
+  left: -17px;
+}
+
+.creamy {
+  color: #DAB7A3;
+  position: absolute;
+  bottom: -7%;
+  left: -27px;
+}
+
+.coffee-cups {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  left: 30%;
+  top: 3%;
+}
+
+.handle {
+  position: absolute;
+  height: 20px;
+  width: 15px;
+  background: transparent;
+  border-radius: 50% 30%;
+  left: 95%;
+  top: 10%;
+  z-index: -1;
+  border: 2px solid #F4E8DA;
+}
+
+.cup {
+  position: absolute;
+  width: 70px;
+  height: 55px;
+  background: #252C32;
+  border: 2px solid #F4E8DA;
+  border-radius: 0 0 5rem 5rem;
+  left: 20%;
+}
+
+.cup-small {
+  position: absolute;
+  width: 55px;
+  height: 40px;
+  background: #252C32;
+  border: 2px solid #F4E8DA;
+  border-radius: 0 0 5rem 5rem;
+  left: 23%;
+}
+
+.cup-long {
+  position: absolute;
+  width: 60px;
+  height: 70px;
+  background: #252C32;
+  border: 2px solid #F4E8DA;
+  border-radius: 10% 10% 50% 50%;
+  left: 22%;
+}
+
+.doppio {
+  top: 5%;
+  background: linear-gradient(to bottom, #252C32 40%, #5B4644 40%, #87624F 70%);
+}
+
+.americano {
+  top: 18.5%;
+  background: linear-gradient(to bottom, #252C32 13%, #859FB5 13%, #859FB5 50%, #87624F 50%);
+}
+
+.macchiato {
+  top: 35%;
+   background: linear-gradient(to bottom, #252C32 20%, #F4E8DA 20%, #F4E8DA 40%, #87624F 40%);
+}
+
+.flatwhite {
+  top: 50%;
+  background: linear-gradient(to bottom, #252C32 10%, #F4E8DA 10%, #DAB7A3 60%, #87624F 65%, #5B4644 90%);
+}
+
+.cappuccino {
+  top: 64%;
+  background: linear-gradient(to bottom, #F4E8DA 50%, #DAB7A3 50%, #DAB7A3 55%, #87624F 60%);
+}
+
+.latte {
+  top: 81%;
+  background: linear-gradient(to bottom, #252C32 5%, #F4E8DA 5%, #F4E8DA 30%, #DAB7A3 30%, #DAB7A3 70%, #87624F 70%);
+}
+
+.info {
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  left: 30%;
+}
+
+.first, .second, .third, .fourth, .fifth, .sixth {
+  position: absolute;
+}
+
+.first {
+  top: 7%;
+}
+
+.second {
+  top: 21%;
+}
+
+.third {
+  top: 36%;
+}
+
+.fourth {
+  top: 52%;
+}
+
+.fifth {
+  top: 65%;
+}
+
+.sixth {
+  top: 83%;
+}
