@@ -29,6 +29,13 @@ body {
 	grid-template-columns: 30% 70%;
 }
 
+body.index {
+	grid-template-areas:
+		"header header"
+		"main main"
+		"footer footer";
+}
+
 @media (max-width: 1096px) {
 	body {
 		max-width: 80vw;
@@ -151,6 +158,10 @@ main p {
 
 main img {
 	max-width: 100%;
+}
+
+body.index main img {
+	width: 60%;
 }
 
 footer {
